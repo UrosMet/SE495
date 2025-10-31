@@ -17,6 +17,7 @@ import java.time.Instant;
 public class Shipment {
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)

@@ -15,6 +15,7 @@ import java.time.Instant;
 public class Product {
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "name", nullable = false, length = 120)
